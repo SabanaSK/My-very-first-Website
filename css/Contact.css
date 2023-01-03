@@ -1,0 +1,322 @@
+body {
+    background-color: #0A000C;
+}
+
+.main-logo {
+    display: block;
+    width: 400px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 20px;
+}
+
+header {
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+/* Lightmode*/
+.dark-mode {
+    background-color: #9298F4;
+}
+
+.dark-mode .mobile-nav {
+    background-color: #3735AD;
+}
+
+.dark-mode .anav {
+    background-color: #03014C;
+}
+
+.dark-mode .form-container {
+    background-color: #3735AD;
+}
+
+main {
+    padding-top: 30px;
+}
+
+.About-img {
+    display: block;
+    width: 400px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 35px;
+    margin-bottom: 35px;
+    border-radius: 24px;
+}
+
+.Social-media {
+    width: 100px;
+    height: auto;
+    padding-top: 23px;
+    padding-right: 18px;
+}
+
+h2 {
+    text-align: center;
+    color: white;
+}
+
+.media-container ul {
+    padding-top: 5px;
+    padding-bottom: 30px;
+}
+
+.media-container li {
+    list-style: none;
+    float: left;
+    display: contents;
+}
+
+/* Style inputs, select elements and textareas */
+input[type=text],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+}
+
+/* Style the label to display next to the inputs */
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+/* Style the submit button */
+input[type=submit] {
+    background-color: #e00100;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+
+/* Style the container */
+.form-container {
+    border-radius: 5px;
+    background-color: #40145f;
+    padding: 20px;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Floating column for labels: 25% width */
+.col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+
+/* Floating column for inputs: 75% width */
+.col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+label {
+    color: white;
+}
+
+#message,
+#emailmessage,
+#subjectmessage {
+    color: #e00100;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+
+    .col-25,
+    .col-75,
+    input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+}
+
+/*Navbar,Anpassad för websidorna*/
+@media only screen and (min-width:900px) {
+
+    .container {
+        width: 100%;
+        max-width: 1600px;
+        margin: 0 auto;
+        padding-left: 128px;
+        padding-right: 128px;
+        margin-top: 70px;
+        margin-bottom: 60px;
+
+    }
+
+    nav {
+        display: grid;
+        grid-gap: 16px;
+        grid-template-columns: repeat(4, auto);
+        justify-content: center;
+    }
+
+    .navimg {
+        display: block;
+        width: 200px;
+        height: auto;
+
+    }
+
+    .navimg2 {
+        appearance: none;
+        display: none;
+
+    }
+
+    .hamburger {
+        appearance: none;
+        display: none;
+    }
+
+
+    .media-container ul {
+        margin-right: 30%;
+        margin-left: 35%;
+    }
+}
+
+/*Navbar,Skärmar för mobile och ipad*/
+@media screen and (max-width: 899px) {
+
+    .container {
+
+        /*padding-left: 32px;
+        padding-right: 32px;*/
+        margin-top: 40px;
+    }
+
+    .hamburger {
+        position: relative;
+        display: block;
+        width: 35px;
+        cursor: pointer;
+
+        background: none;
+        appearance: none;
+        outline: none;
+        border: none;
+    }
+
+    .bar,
+    .hamburger::after,
+    .hamburger::before {
+        content: '';
+        display: block;
+        width: 35px;
+        height: 3px;
+        background-color: #fff;
+        margin: 6px 0px;
+        transition: 0.4s;
+    }
+
+    .hamburger.is-active::after {
+        transform: rotate(45deg) translate(-7px, -9px);
+    }
+
+    .hamburger.is-active::before {
+        transform: rotate(-45deg) translate(-4px, 6px);
+    }
+
+    .hamburger.is-active .bar {
+        opacity: 0;
+    }
+
+    .navimg {
+        appearance: none;
+        display: none;
+
+    }
+
+    .navimg2 {
+        width: 150px;
+        height: auto;
+
+    }
+
+    .anav,
+    .navimg2 {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 16px;
+    }
+
+    .anav {
+        width: 240px;
+        border-radius: 20px;
+        height: auto;
+        margin-top: 35px;
+        background-color: #110014;
+    }
+
+    .anav:hover {
+        background-color: #220428;
+    }
+
+    .mobile-nav {
+        position: fixed;
+        top: 0;
+        left: 100%;
+        width: 100%;
+        height: 430px;
+        display: block;
+        background-color: #110014;
+        margin-top: 20px;
+        border-radius: 20px;
+        transition: 0.4s;
+
+    }
+
+    .mobile-nav.is-active {
+        left: 0;
+        position: relative;
+    }
+
+    .media-container ul {
+        margin-right: 27%;
+        margin-left: 25%;
+    }
+
+}
+
+footer {
+    padding-top: 100px;
+}
+
+#footer-p {
+    text-align: center;
+    color: #e9e9e9;
+    padding-left: 200px;
+}
+
+.media-icon {
+    width: 50px;
+    height: auto;
+    float: right;
+    margin-right: 22px;
+    padding-bottom: 5%;
+}
